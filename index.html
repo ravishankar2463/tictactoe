@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link 
+	href="./bootstrap.min.css" 
+	rel="stylesheet">
+
+</head>
+<body>
+<div><h1 class="text-center text-muted pt-5">Curent Player Is: <span id="crntplyr">Player 1 i.e X</span></h1></div>
+<div class="container">
+<div id="TTTBoard">
+	<div id="row0" class="row">
+		<div id="row0col0" class="col border-dark border-right border-bottom text-secondary" onclick="boxclick(this.id)"></div>
+		<div id="row0col1" onclick="boxclick(this.id)" class="col border-dark border-bottom text-secondary"></div>
+		<div id="row0col2" onclick="boxclick(this.id)" class="col border-dark border-left border-bottom text-secondary"></div>
+	</div>
+	<div id="row1" class="row">
+		<div id="row1col0" onclick="boxclick(this.id)" class="col border-dark border-right border-bottom text-secondary"></div>
+		<div id="row1col1" onclick="boxclick(this.id)" class="col border-dark border-bottom text-secondary"></div>
+		<div id="row1col2" onclick="boxclick(this.id)" class="col border-dark border-left border-bottom text-secondary"></div>
+	</div>
+	<div id="row2" class="row">
+		<div id="row2col0" onclick="boxclick(this.id)" class="col border-dark border-right text-secondary"></div>
+		<div id="row2col1" onclick="boxclick(this.id)" class="col text-secondary"></div>
+		<div id="row2col2" onclick="boxclick(this.id)" class="col border-dark border-left text-secondary"></div>
+	</div>
+</div>
+</div>
+<div><h3 class="text-center text-success mb-4 pt-5"><span id="winplyr"></span></h3></div>
+<div class="d-flex">
+	<button class="btn btn-outline-danger mx-auto" onclick="reset()">Reset Game</button>
+</div>
+<script type="text/javascript" src="./ttt.js"></script>
+</body>
+</html>
